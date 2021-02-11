@@ -2,7 +2,7 @@ import requests
 import json
 import time
 import hashlib
-improt os
+import os
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
