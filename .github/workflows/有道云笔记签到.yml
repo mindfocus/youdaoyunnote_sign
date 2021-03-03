@@ -33,3 +33,14 @@ jobs:
             webhook : ${{ secrets.webhook }}
             SCKEY:   ${{ secrets.SCKEY }}
             notice:   ${{ secrets.notice }}
+      - name: '运行签到脚本'  
+        run: python3 youdaoyunnote_sign.py 
+        env:
+            xz_count: ${{ secrets.xz_count }}
+            xz_password_1: ${{ secrets.xz_password_1 }}
+            xz_username_1: ${{ secrets.xz_username_1 }}
+            xz_username_0: ${{ secrets.xz_username_0 }}
+            xz_password_0: ${{ secrets.xz_password_0 }}
+            webhook : ${{ secrets.webhook }}
+            SCKEY:   ${{ secrets.SCKEY }}
+            notice:   ${{ secrets.notice }}
