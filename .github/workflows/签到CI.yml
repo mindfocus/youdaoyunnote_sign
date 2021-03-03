@@ -1,4 +1,4 @@
-name: 有道云笔记签到
+name: 签到集合
 
 on:
   workflow_dispatch: # 手动触发
@@ -34,7 +34,7 @@ jobs:
             SCKEY:   ${{ secrets.SCKEY }}
             notice:   ${{ secrets.notice }}
       - name: '运行签到脚本'  
-        run: python3 youdaoyunnote_sign.py 
+        run: python3 xinzhixiaozhan_sign.py
         env:
             xz_count: ${{ secrets.xz_count }}
             xz_password_1: ${{ secrets.xz_password_1 }}
