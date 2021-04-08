@@ -32,7 +32,7 @@ def output(content):
 def server():
     global contents
     message = {"text": "新知小站签到通知！", "desp": contents}
-    r = requests.post("https://sc.ftqq.com/" + SCKEY + ".send", data=message)
+    r = requests.post("https://sctapi.ftqq.com/" + SCKEY + ".send", data=message)
     if r.status_code == 200:
         print('[+]server酱已推送，请查收')
 
