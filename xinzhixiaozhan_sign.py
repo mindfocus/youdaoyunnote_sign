@@ -85,7 +85,7 @@ def checkin(username, password):
             output('[+]用户： 签到失败!')
             output('[+]原因： ' + info['msg'])
     else:
-        output('[+]用户： 签到失败!')
+        output('[+]用户： 签到失败!!')
         output('[+]原因： status code:' + r.status_code)
 
 def main():
